@@ -28,8 +28,6 @@ set showmatch
 
 "" Keys
 
-imap ` <ESC>
-
 " Bundles
 nmap <silent> <F2> :TagbarToggle<CR>
 nmap <silent> <F3> :NERDTreeToggle<CR>
