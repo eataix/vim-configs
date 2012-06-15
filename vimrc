@@ -1,32 +1,38 @@
 source ~/.vim/bundles.vim
 
-"" Generic Settings
-filetype plugin indent on
-set nocompatible
+
+set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
-set showcmd
+set showcmd                     " display incomplete commands
+filetype plugin indent on       " load file type plugins + indentation
 
-set nowrap
-set tabstop=8 shiftwidth=8
-set expandtab
-set backspace=indent,eol,start
+"" Whitespace
+set nowrap                      " don't wrap lines
+set shiftwidth=4                " auto-indent amount
+set softtabstop=4               " a tab is four spaces
+set tabstop=4                   " a tab is four spaces
+set expandtab                   " use spaces, not tabs
+set backspace=indent,eol,start  " backspace through everything in insert mode
+set shiftround                  " when at 3 spaces, and I hit > ... go to 4, not 5
 
-set ruler
-set number
-set autoindent
-set visualbell
-
+" Style
+set ruler                       " show current positions along the bottom
+set number                      " show line numbers
+set autoindent                  " auto indent
+set showmatch                   " show matching brackets
 set colorcolumn=80
 
 "" Searching
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set showmatch
+set hlsearch                    " highlight matches
+set incsearch                   " incremental searching
+set ignorecase                  " searches are case insensitive...
+set smartcase                   " ... unless they contain at least one capital letter
 
-"" Keys
+" Misc
+set spell                       " spell checking on
+set textwidth=72                " insert a newline after 72 characters
+
 
 " Bundles
 nmap <silent> <F2> :TagbarToggle<CR>
@@ -37,14 +43,18 @@ nmap <silent> <F4> :BuffergatorToggle<CR>
 " (it will prompt for sudo password when writing)
 cmap w!! %!sudo tee > /dev/null %
 
+
+" use comma as <Leader> key instead of backslash
+let mapleader=","
+
 " Buffer Control
 nmap <silent> ,. :bnext<CR>
 nmap <silent> ,m :bprev<CR>
 
+
 " Tab Control
 nmap <silent> ;' :tabnext<CR>
 nmap <silent> ;l :tabprev<CR>
-
 
 " Easy split navigation
 noremap <C-h> <C-w>h

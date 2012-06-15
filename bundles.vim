@@ -23,7 +23,7 @@ let g:ctrlp_buftag_ctags_bin = '/usr/local/bin/ctags'
 Bundle 'nerdtree'
 Bundle 'supertab'
 Bundle 'vim-buffergator'
-" Required by ghcmod 
+" Required by ghcmod
 Bundle 'vimproc'
 Bundle 'ghcmod-vim'
 Bundle 'haskell.vim'
@@ -38,7 +38,6 @@ set pumheight =15
 let g:SuperTabDefaultCompletionType = "context"
 let g:clang_complete_auto = 0
 let g:clang_complete_copen = 1
-Bundle 'VimClojure'
 
 
 set rtp+=$GOROOT/misc/vim
