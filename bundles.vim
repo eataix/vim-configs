@@ -14,6 +14,7 @@ Bundle 'vim-snipmate'
 Bundle 'snipmate-snippets'
 " End of snipmate
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'vim-tomorrow-theme'
 Bundle 'tpope/vim-fugitive'
 Bundle 'c.vim'
 Bundle 'clang_complete'

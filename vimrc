@@ -76,7 +76,7 @@ set textwidth=79        " Newlines are inserted after 79 characters
 "" Eya Candy
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night-Bright
 
 """ Trailing Spaces
 """ Reference: https://github.com/sorin-ionescu/dot-files/blob/master/vimrc
