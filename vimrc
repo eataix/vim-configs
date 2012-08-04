@@ -1,6 +1,5 @@
 source ~/.vim/bundles.vim
 
-
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
@@ -21,7 +20,7 @@ set ruler                       " show current positions along the bottom
 set number                      " show line numbers
 set autoindent                  " auto indent
 set showmatch                   " show matching brackets
-set colorcolumn=80
+set colorcolumn=72
 
 "" Searching
 set hlsearch                    " highlight matches
@@ -31,18 +30,6 @@ set smartcase                   " ... unless they contain at least one capital l
 
 " Misc
 set spell                       " spell checking on
-set textwidth=72                " insert a newline after 72 characters
-
-
-" Bundles
-nmap <silent> <F2> :TagbarToggle<CR>
-nmap <silent> <F3> :NERDTreeToggle<CR>
-nmap <silent> <F4> :BuffergatorToggle<CR>
-
-" use :w!! to write to a file using sudo if you forgot to 'sudo vim file'
-" (it will prompt for sudo password when writing)
-cmap w!! %!sudo tee > /dev/null %
-
 
 " use comma as <Leader> key instead of backslash
 let mapleader=","
@@ -50,7 +37,6 @@ let mapleader=","
 " Buffer Control
 nmap <silent> ,. :bnext<CR>
 nmap <silent> ,m :bprev<CR>
-
 
 " Tab Control
 nmap <silent> ;' :tabnext<CR>
@@ -68,33 +54,11 @@ set cursorline          " Highlight the current line.
 set hidden              " Allow hidden buffers.
 set spell               " Spell checking on
 
-"" Python - PEP8
-set softtabstop=8
-set shiftround
-set textwidth=79        " Newlines are inserted after 79 characters
-
 "" Eya Candy
 set t_Co=256
 set background=dark
-colorscheme Tomorrow-Night-Bright
 
 """ Trailing Spaces
 """ Reference: https://github.com/sorin-ionescu/dot-files/blob/master/vimrc
-
-set list                " Shows invisible characters
-set listchars=tab:▸\ ,trail:.
-
-function! StripTrailingWhitespace()
-    if !&binary && &modifiable && &filetype != 'diff'
-        let l:winview = winsaveview()
-        %s/\s\+$//e
-        let @/=''
-        call winrestview(l:winview)
-    endif
-endfunction
-
-au BufWritePre,FileWritePre,FileAppendPre,FilterWritePre *
-            \call StripTrailingWhitespace()
-
-""" Tags
-set tags+=/usr/include/tags
+set list
+set listchars=tab:▸\ ,eol:¬,trail:⌴,extends:❯,precedes:❮
