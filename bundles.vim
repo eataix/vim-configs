@@ -15,6 +15,13 @@ let g:clang_snippets_engine = 'clang_complete'
 set completeopt=menu,longest
 Bundle 'majutsushi/tagbar'
 Bundle 'ervandew/supertab'
-
+Bundle 'chriskempson/vim-tomorrow-theme'
+set bg=dark
+colorscheme Tomorrow-Night-Bright
+Bundle 'Lokaltog/vim-powerline'
+let g:Powerline_symbols="unicode"
+Bundle 'scrooloose/nerdtree'
+Bundle 'kien/ctrlp.vim'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on

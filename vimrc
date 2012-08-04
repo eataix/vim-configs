@@ -28,9 +28,6 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-" Misc
-set spell                       " spell checking on
-
 " use comma as <Leader> key instead of backslash
 let mapleader=","
 
@@ -52,7 +49,6 @@ noremap <C-l> <C-w>l
 set laststatus=2        " Required by Powerline.
 set cursorline          " Highlight the current line.
 set hidden              " Allow hidden buffers.
-set spell               " Spell checking on
 
 "" Eya Candy
 set t_Co=256
