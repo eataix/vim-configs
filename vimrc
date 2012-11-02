@@ -20,7 +20,8 @@ set ruler                       " show current positions along the bottom
 set number                      " show line numbers
 set autoindent                  " auto indent
 set showmatch                   " show matching brackets
-set colorcolumn=72
+set colorcolumn=80
+set textwidth=80
 
 "" Searching
 set hlsearch                    " highlight matches
@@ -30,6 +31,9 @@ set smartcase                   " ... unless they contain at least one capital l
 
 " use comma as <Leader> key instead of backslash
 let mapleader=","
+
+nmap <F2> :NERDTreeToggle<CR>
+nmap <F3> :TagbarToggle<CR>
 
 " Buffer Control
 nmap <silent> ,. :bnext<CR>
@@ -47,7 +51,7 @@ noremap <C-l> <C-w>l
 
 "" Misc
 set laststatus=2        " Required by Powerline.
-set cursorline          " Highlight the current line.
+"set cursorline          " Highlight the current line.
 set hidden              " Allow hidden buffers.
 
 "" Eya Candy
