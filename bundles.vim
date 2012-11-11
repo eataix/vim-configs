@@ -19,7 +19,7 @@ Bundle 'Lokaltog/vim-powerline'
 let g:Powerline_symbols="fancy"
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-Bundle 'eataix/ultisnips'
+"Bundle 'eataix/ultisnips'
 
 Bundle 'Shougo/vimproc'
 Bundle 'eagletmt/ghcmod-vim'
@@ -33,9 +33,9 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'gregsexton/Muon'
 Bundle 'tristen/superman'
-"colorscheme Tomorrow-Night-Bright
-let base16colorspace=256
-colorscheme base16-monokai
+colorscheme Tomorrow-Night
+"let base16colorspace=256
+"colorscheme base16-monokai
 
 set background=dark
 
