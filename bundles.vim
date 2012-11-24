@@ -6,13 +6,13 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'Rip-Rip/clang_complete'
+"Bundle 'Rip-Rip/clang_complete'
 "" clang_complete
-let g:clang_complete_copen = 1
-let g:clang_periodic_quickfix = 1
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'clang_complete'
-set completeopt=menu,longest
+"let g:clang_complete_copen = 1
+"let g:clang_periodic_quickfix = 1
+"let g:clang_snippets = 1
+"let g:clang_snippets_engine = 'clang_complete'
+"set completeopt=menu,longest
 Bundle 'majutsushi/tagbar'
 Bundle 'ervandew/supertab'
 Bundle 'Lokaltog/vim-powerline'
@@ -33,7 +33,7 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'gregsexton/Muon'
 Bundle 'tristen/superman'
-colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Bright
 "let base16colorspace=256
 "colorscheme base16-monokai
 
