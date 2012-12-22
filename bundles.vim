@@ -33,7 +33,10 @@ Bundle 'w0ng/vim-hybrid'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'gregsexton/Muon'
 Bundle 'tristen/superman'
-colorscheme Tomorrow-Night-Bright
+try
+	colorscheme Tomorrow-Night-Bright
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
 "let base16colorspace=256
 "colorscheme base16-monokai
 
