@@ -17,19 +17,19 @@ Bundle 'majutsushi/tagbar'
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-Bundle 'eataix/ultisnips'
-Bundle 'tpope/vim-sleuth'
+"Bundle 'eataix/ultisnips'
+"Bundle 'tpope/vim-sleuth'
 Bundle 'tpope/vim-sensible'
 Bundle 'davidhalter/jedi-vim'
 
-Bundle 'chriskempson/vim-tomorrow-theme'
+"Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'spolu/dwm.vim'
 
-try
-	set background=dark
-	colorscheme Tomorrow-Night-Bright
-catch /^Vim\%((\a\+)\)\=:E185/
-endtry
+"try
+"    set background=dark
+"    colorscheme Tomorrow-Night-Bright
+"catch /^Vim\%((\a\+)\)\=:E185/
+"endtry
 
 nmap <F1> :CtrlPBuffer<CR>
 nmap <F2> :NERDTreeToggle<CR>
