@@ -6,8 +6,8 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
+" clang_complete
 "Bundle 'Rip-Rip/clang_complete'
-"" clang_complete
 "let g:clang_complete_copen = 1
 "let g:clang_periodic_quickfix = 1
 "let g:clang_snippets = 1
@@ -15,33 +15,23 @@ Bundle 'gmarik/vundle'
 "set completeopt=menu,longest
 Bundle 'majutsushi/tagbar'
 Bundle 'ervandew/supertab'
-Bundle 'Lokaltog/vim-powerline'
-let g:Powerline_symbols="fancy"
 Bundle 'scrooloose/nerdtree'
 Bundle 'kien/ctrlp.vim'
-"Bundle 'eataix/ultisnips'
+Bundle 'eataix/ultisnips'
+Bundle 'tpope/vim-sleuth'
+Bundle 'tpope/vim-sensible'
+Bundle 'davidhalter/jedi-vim'
 
-Bundle 'Shougo/vimproc'
-Bundle 'eagletmt/ghcmod-vim'
-
-Bundle 'chriskempson/base16-vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'tomasr/molokai'
 Bundle 'spolu/dwm.vim'
-Bundle 'larssmit/vim-getafe'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'gregsexton/Muon'
-Bundle 'tristen/superman'
+
 try
+	set background=dark
 	colorscheme Tomorrow-Night-Bright
 catch /^Vim\%((\a\+)\)\=:E185/
 endtry
-"let base16colorspace=256
-"colorscheme base16-monokai
 
-set background=dark
-
+nmap <F1> :CtrlPBuffer<CR>
 nmap <F2> :NERDTreeToggle<CR>
 nmap <F3> :TagbarToggle<CR>
 
