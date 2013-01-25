@@ -61,4 +61,5 @@ set background=dark
 """ Trailing Spaces
 """ Reference: https://github.com/sorin-ionescu/dot-files/blob/master/vimrc
 set list
-set listchars=tab:▸\ ,eol:¬,trail:⌴,extends:❯,precedes:❮
+"set listchars=tab:▸\ ,eol:¬,trail:⌴,extends:❯,precedes:❮
+set listchars=tab:▸\ ,trail:⌴,extends:❯,precedes:❮
