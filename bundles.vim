@@ -1,38 +1,49 @@
-"" Vundle - Vim plugin manager
-set nocompatible
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
+" alternatively, pass a path where Vundle should install plugins
+"let path = '~/some/path/here'
+"call vundle#rc(path)
 
-Bundle 'gmarik/vundle'
-" clang_complete
-"Bundle 'Rip-Rip/clang_complete'
-"let g:clang_complete_copen = 1
-"let g:clang_periodic_quickfix = 1
-"let g:clang_snippets = 1
-"let g:clang_snippets_engine = 'clang_complete'
-"set completeopt=menu,longest
-Bundle 'majutsushi/tagbar'
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/nerdtree'
-Bundle 'kien/ctrlp.vim'
-"Bundle 'eataix/ultisnips'
-"Bundle 'tpope/vim-sleuth'
-Bundle 'tpope/vim-sensible'
-Bundle 'davidhalter/jedi-vim'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/vundle'
 
-"Bundle 'chriskempson/vim-tomorrow-theme'
-Bundle 'spolu/dwm.vim'
+" The following are examples of different formats supported.
+" Keep Plugin commands between here and filetype plugin indent on.
+" scripts on GitHub repos
+Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+Plugin 'ervandew/supertab'
+Plugin 'justinmk/vim-sneak'
+Plugin 'tpope/vim-sensible'
+let base16colorspace=256  " Access colors present in 256 colorspace
+set background=dark
+Plugin 'chriskempson/base16-vim'
+colorscheme base16-default
+Plugin 'spolu/dwm.vim'
 
-"try
-"    set background=dark
-"    colorscheme Tomorrow-Night-Bright
-"catch /^Vim\%((\a\+)\)\=:E185/
-"endtry
+filetype plugin indent on     " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList          - list configured plugins
+" :PluginInstall(!)    - install (update) plugins
+" :PluginSearch(!) foo - search (or refresh cache first) for foo
+" :PluginClean(!)      - confirm (or auto-approve) removal of unused plugins
+"
+" see :h vundle for more details or wiki for FAQ
+" NOTE: comments after Plugin commands are not allowed.
+" Put your stuff after this line
 
-nmap <F1> :CtrlPBuffer<CR>
-nmap <F2> :NERDTreeToggle<CR>
-nmap <F3> :TagbarToggle<CR>
-
-filetype plugin indent on
