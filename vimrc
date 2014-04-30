@@ -56,7 +56,6 @@ set hidden              " Allow hidden buffers.
 
 "" Eya Candy
 set t_Co=256
-set background=dark
 
 """ Trailing Spaces
 """ Reference: https://github.com/sorin-ionescu/dot-files/blob/master/vimrc

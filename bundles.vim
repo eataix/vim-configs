@@ -18,20 +18,34 @@ Plugin 'majutsushi/tagbar'
 Plugin 'fatih/vim-go'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 Plugin 'Valloric/YouCompleteMe'
+let g:ycm_path_to_python_interpreter = '/usr/bin/python2'
+
+"" YouCompleteMe
+let g:ycm_key_list_previous_completion=['<Up>']
+
+"" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsListSnippets="<c-s-tab>"
+
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
-Plugin 'majutsushi/tagbar'
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
-Plugin 'ervandew/supertab'
 Plugin 'justinmk/vim-sneak'
 Plugin 'tpope/vim-sensible'
 let base16colorspace=256  " Access colors present in 256 colorspace
-set background=dark
+"set background=dark
 Plugin 'chriskempson/base16-vim'
-colorscheme base16-default
+colorscheme base16-solarized
 Plugin 'spolu/dwm.vim'
+
+Plugin 'Shougo/vimproc.vim'
+Plugin 'eagletmt/ghcmod-vim'
 
 filetype plugin indent on     " required
 " To ignore plugin indent changes, instead use:
