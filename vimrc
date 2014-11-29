@@ -1,4 +1,4 @@
-source ~/.vim/bundles.vim
+source ~/.vim/plug.vim
 
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
