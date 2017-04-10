@@ -10,8 +10,8 @@ let g:go_fmt_command = "goimports"
 Plug 'scrooloose/nerdtree'
 Plug 'kien/ctrlp.vim'
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer' }
-let g:ycm_path_to_python_interpreter = '/usr/local/bin/python2'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.sh --clang-completer --system-libclang' }
+"let g:ycm_path_to_python_interpreter = '/usr/local/bin/python2'
 
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
@@ -25,7 +25,9 @@ let base16colorspace=256  " Access colors present in 256 colorspace
 " colorscheme base16-solarized
 Plug 'spolu/dwm.vim'
 
-Plug 'wting/rust.vim'
+Plug 'rust-lang/rust.vim'
+
+Plug 'lervag/vim-latex'
 
 call plug#end()
 
